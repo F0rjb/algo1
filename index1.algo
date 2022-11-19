@@ -1,0 +1,22 @@
+ALGORITHM 
+VAR
+    ch: CHAR;
+    l:INTEGER; //length
+    nw:INTEGER;//number of words 
+    nv:INTEGER;//number of vowels
+BEGIN
+l:=0;
+nw=1;
+nv=0;
+REPEAT
+    read(ch)
+    l:=l+1;
+    IF ((ch)="a" Or (ch)="A" Or (ch)= "e" Or (ch)="E" Or (ch)="y" Or (ch)="Y" Or (ch)= "u" Or (ch)="U" Or (ch)= "i" Or (ch)= "I" Or(ch)= "o" Or (ch)= "O" ) THEN
+    nv=nv+1;
+    END_IF
+    IF (ch=" ") THEN
+    nw=nw+1;
+    END_IF 
+    UNTIL (ch=".")
+Write (l,nw,nv)
+END
