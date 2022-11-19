@@ -6,8 +6,8 @@ VAR
     nv:INTEGER;//number of vowels
 BEGIN
 l:=0;
-nw=1;
-nv=0;
+nw:=1;
+nv:=0;
 REPEAT
     read(ch)
     l:=l+1;
